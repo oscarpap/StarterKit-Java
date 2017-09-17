@@ -1,0 +1,19 @@
+package considition;
+
+import considition.api.*;
+import considition.api.models.*;
+
+public class Main {
+	
+	// TODO: Enter your API key
+	static final String API_KEY = "XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX";
+	
+	static void solve(GameState game) {
+		
+	}
+	
+	public static void main(String[] args) {
+		Api.setApiKey(apiKey);
+	}
+	
+}

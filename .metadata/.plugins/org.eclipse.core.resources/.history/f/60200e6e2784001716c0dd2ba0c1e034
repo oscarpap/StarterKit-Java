@@ -1,0 +1,36 @@
+package considition.api;
+
+import java.util.List;
+
+public class Api {
+	
+	private static String _apiKey;
+	private static boolean _silenced;
+	
+	private static void log(String message) {
+		if (!_silenced) {
+			System.out.println("API: " + message);
+		}
+	}
+	
+	public static void setApiKey(String apiKey) {
+		_apiKey = apiKey;
+	}
+	
+	public static void initGame() {
+		
+	}
+	
+	public static void getMyLastGame() {
+		
+	}
+	
+	public static void getGame(int gameStateId) {
+		
+	}
+	
+	public static void submitSolution(List<String> solution) {
+		
+	}
+	
+}

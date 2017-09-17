@@ -1,0 +1,64 @@
+package considition.api;
+
+import java.util.List;
+import java.io.*;
+import java.net.*;
+
+import considition.api.models.*;
+
+public class Api {
+	
+	private static final String DOMAIN = "http://localhost:59435";
+	private static String _apiKey;
+	private static boolean _silenced;
+	
+	private static void log(String message) {
+		if (!_silenced) {
+			System.out.println("API: " + message);
+		}
+	}
+	
+	private static String get(String path) {
+		try {
+			URL url = new URL(DOMAIN + "/" + path);
+			HttpURLConnection con = (HttpURLConnection)url.openConnection();
+			con.setRequestMethod("GET");
+			con.setRequestProperty("Accept", "application/json");
+			
+		}
+		catch (IOException ex) {
+			log("Exception: " + ex.getMessage());
+			ex.printStackTrace();
+		}
+		return null;
+	}
+	
+	public static void setApiKey(String apiKey) {
+		_apiKey = apiKey;
+	}
+	
+	public static void silence() {
+		_silenced = true;
+	}
+	
+	public static void unsilence() {
+		_silenced = false;
+	}
+	
+	public static void initGame() {
+		
+	}
+	
+	public static GameState getMyLastGame() {
+		
+	}
+	
+	public static GameState getGame(int gameStateId) {
+		
+	}
+	
+	public static int submitSolution(List<String> solution) {
+		
+	}
+	
+}

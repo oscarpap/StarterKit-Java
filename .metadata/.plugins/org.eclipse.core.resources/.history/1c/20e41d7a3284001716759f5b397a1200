@@ -1,0 +1,31 @@
+package considition.api.helpers;
+
+import java.lang.reflect.Type;
+
+import com.google.gson.*;
+
+import considition.api.models.response.*;
+
+public class ApiResponseDeserializer implements JsonDeserializer<ApiResponse> {
+
+	public ApiResponse deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context)
+			throws JsonParseException {
+		
+		JsonObject jsonObject = json.getAsJsonObject();
+
+        JsonElement jsonType = jsonObject.get("type");
+        String type = jsonType.getAsString();
+
+        ApiResponse typeModel = null;     
+
+        if("type1".equals(type)) {
+            typeModel = new Type1Model();
+        } else if("type2".equals(type)) {
+            typeModel = new Type2Model();
+        }
+        // TODO : set properties of type model
+
+        return typeModel;
+	}
+	
+}

@@ -1,0 +1,6 @@
+package considition.api.models.objectives;
+
+public class VisitCityObjective extends GameObject {
+	public String x;
+	public int y;
+}

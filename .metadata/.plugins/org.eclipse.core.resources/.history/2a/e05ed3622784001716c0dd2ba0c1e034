@@ -1,0 +1,13 @@
+package considition.api;
+
+public class Api {
+	
+	private static String _apiKey;
+	
+	public static void setApiKey(String apiKey) {
+		_apiKey = apiKey;
+	}
+	
+	
+	
+}

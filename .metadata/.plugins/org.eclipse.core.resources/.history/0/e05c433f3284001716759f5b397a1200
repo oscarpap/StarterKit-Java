@@ -1,0 +1,5 @@
+package considition.api.helpers;
+
+public class ApiResponseDeserializer {
+
+}

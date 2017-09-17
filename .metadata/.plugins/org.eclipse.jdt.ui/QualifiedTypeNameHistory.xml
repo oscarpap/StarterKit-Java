@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="considition.api.models.GameState"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="considition.api.models.response.ApiResponse"/>
+<fullyQualifiedTypeName name="com.google.gson.GsonBuilder"/>
+<fullyQualifiedTypeName name="considition.api.helpers.ApiResponseDeserializer"/>
+<fullyQualifiedTypeName name="com.google.gson.JsonDeserializer"/>
+<fullyQualifiedTypeName name="considition.api.models.objectives.GameObjective"/>
+</qualifiedTypeNameHistroy>
