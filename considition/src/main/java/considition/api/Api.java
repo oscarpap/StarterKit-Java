@@ -14,7 +14,7 @@ import considition.api.models.response.*;
 
 public class Api {
 	
-	private static final String DOMAIN = "http://theconsidition.se/";
+	private static final String DOMAIN = "http://theconsidition.se";
 	private static String _apiKey;
 	private static boolean _silenced;
 	
