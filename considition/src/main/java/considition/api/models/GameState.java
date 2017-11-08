@@ -8,6 +8,8 @@ public class GameState {
 	public List<City> cities;
 	public List<TransportationMethod> transportation;
 	public List<GameObjective> objectives;
+	public int timeLimit;
+	public double pollutionsPointRate;
 	public Location start;
 	public Location end;
 	public char[][] map;
