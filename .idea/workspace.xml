@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf399e6e-18b6-4b66-bbb1-02a569a64517" name="Default" comment="" />
+    <list default="true" id="bf399e6e-18b6-4b66-bbb1-02a569a64517" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -699,7 +701,7 @@
       <updated>1510216524453</updated>
       <workItem from="1510216526427" duration="2715000" />
       <workItem from="1510246940025" duration="614000" />
-      <workItem from="1510269535389" duration="378000" />
+      <workItem from="1510269535389" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="Added nearest neighbour">
       <created>1510269651265</created>
@@ -712,10 +714,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3707000" />
+    <option name="totallyTimeSpent" value="3951000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
