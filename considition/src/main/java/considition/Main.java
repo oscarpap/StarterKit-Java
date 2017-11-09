@@ -4,11 +4,12 @@ import java.util.*;
 
 import considition.api.*;
 import considition.api.models.*;
+import considition.api.solveObjectives.NearestNeighbour;
 
 public class Main {
 	
 	// TODO: Enter your API key
-	static final String API_KEY = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+	static final String API_KEY = "a3732fd3-f42e-40ec-a031-d52de6c3a4a4";
 	
 	static List<String> solve(GameState game) {
 		/*
@@ -24,15 +25,21 @@ public class Main {
 		List<String> solution = new ArrayList<String>();
 		int x = game.start.x;
 		int y = game.start.y;
-		while (x < game.end.x) {
-			x++;
-			solution.add("TRAVEL EAST");
-		}
-		while (y < game.end.y) {
-			y++;
-			solution.add("TRAVEL SOUTH");
-		}
-		
+
+		NearestNeighbour nearestNeighbour = new NearestNeighbour(game);
+		nearestNeighbour.getNearestNeighbour(x, y);
+
+
+
+        while (x < game.end.x) {
+            x++;
+            solution.add("TRAVEL EAST");
+        }
+        while (y < game.end.y) {
+            y++;
+            solution.add("TRAVEL SOUTH");
+        }
+
 		return solution;
 	}
 	
@@ -43,5 +50,6 @@ public class Main {
 		List<String> solution = solve(game);
 		Api.submitSolution(solution, game.id);
 	}
+
 	
 }
