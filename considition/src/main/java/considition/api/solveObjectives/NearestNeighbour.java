@@ -2,7 +2,6 @@ package considition.api.solveObjectives;
 
 import considition.api.models.City;
 import considition.api.models.GameState;
-import considition.api.models.Location;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,22 +30,15 @@ public class NearestNeighbour {
             if(visited.contains(c)){
                 continue;
             }
-            if(tempX == -1){
+            else if(tempX == -1 || tempY == -1){
                 tempX = Math.abs(x-c.x);
-                nearestCity.x = tempX;
+                tempY = Math.abs(y-c.y);
+                nearestCity = c;
             }
-            else if(tempX>Math.abs(x-c.x)){
+            else if(tempX>Math.abs(x-c.x) || tempY>Math.abs(y-c.y)){
                 tempX = Math.abs(x-c.x);
-                nearestCity.x = tempX;
-            }
-
-            if(tempY == -1){
                 tempY = Math.abs(y-c.y);
-                nearestCity.y = tempY;
-            }
-            else if(tempY>Math.abs(y-c.y)){
-                tempY = Math.abs(y-c.y);
-                nearestCity.y = tempY;
+                nearestCity = c;
             }
         }
 

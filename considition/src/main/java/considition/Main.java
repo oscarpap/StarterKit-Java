@@ -1,9 +1,11 @@
 package considition;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import considition.api.*;
 import considition.api.models.*;
+import considition.api.solveObjectives.FarFromLandSolver;
 import considition.api.solveObjectives.NearestNeighbour;
 
 public class Main {
@@ -27,7 +29,10 @@ public class Main {
 		int y = game.start.y;
 
 		NearestNeighbour nearestNeighbour = new NearestNeighbour(game);
-		nearestNeighbour.getNearestNeighbour(x, y);
+        City nearestCity = nearestNeighbour.getNearestNeighbour(x, y);
+
+        FarFromLandSolver farFromLandSolver = new FarFromLandSolver(x, y, solution, game);
+        solution.addAll(farFromLandSolver.returnSolution().stream().collect(Collectors.toList()));
 
 
 
@@ -50,6 +55,4 @@ public class Main {
 		List<String> solution = solve(game);
 		Api.submitSolution(solution, game.id);
 	}
-
-	
 }
